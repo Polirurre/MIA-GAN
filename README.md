@@ -41,4 +41,4 @@ This file performs a K-Nearest-Neighbor after the PCA. Therefore, it will find s
    - PCA KNN Random Forest:
         Unsupervised Random Forest classifier
    - PCA KNN MinMax:
-        
+        Supervised Metric Based classifier
