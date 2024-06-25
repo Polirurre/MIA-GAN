@@ -35,10 +35,9 @@ This file performs PCA Comparative for a range of epsilons, without having to ma
 4. PCA KNN
 This file performs a K-Nearest-Neighbor after the PCA. Therefore, it will find similar trajectories between the datasets and return their distance. Moreover, the distance can be calculated according to Manhattan, Euclidean, Chebyshev algorithms.
 
-5. PCA KNN MinMax
-Supervised Metric Based classifier
-
-7. RouteMIA
+RouteMIA
+   - MIN MAX:
+        Most likelyhood classifier.
    - PCA KNN SVM:
         Support Vector Machine that can use linear, polynomial or radial basis kernel classifier.
    - PCA KNN Random Forest:
