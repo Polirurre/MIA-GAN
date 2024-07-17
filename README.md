@@ -15,8 +15,8 @@ Each line in these files represents a trajectory and each index represents the c
 We have used both [PyTorch](https://pytorch.org/) and [Sci-kit Learn](https://scikit-learn.org/stable/) in our implementation. To manage the needs of our attack the environment was set up with [Anaconda](https://www.anaconda.com/download/).
 
 ```
-conda create -n pca
-conda activate pca
+conda create -n RouteMIA
+conda activate RouteMIA
 %pip install torch pandas matplotlib scikit-learn numpy seaborn
 ```
 ## Code
@@ -36,10 +36,12 @@ This file performs PCA Comparative for a range of epsilons, without having to ma
 Second axis of my MIA: This file performs a K-Nearest-Neighbor after the PCA. Therefore, it will find similar trajectories between the datasets and return their distance. Moreover, you can choose between different distance_metrics, in my case none had an edge between them.
 
 6. MIN MAX
-        Most likelyhood classifier based on probability and a threshold
-7. SVM
-        Support Vector Machine that can use linear, polynomial or radial basis kernel classifier.
-8. Random Forest
-        Random Forest classifier
+Most likelyhood classifier based on probability and a threshold.
+
+8. SVM
+Support Vector Machine that can use linear, polynomial or radial basis kernel classifier.
+
+10. Random Forest
+Random Forest classifier.
         
-I recommend if you want to mess around with the code to take a look at my paper (to be published) or a brief article that showcases this work presented in RECSI 2024
+I recommend if you want to mess around with the code to take a look at my paper (to be published, arxiv is taking long) or a brief article that showcases this work presented in RECSI 2024.
