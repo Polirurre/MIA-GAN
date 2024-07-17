@@ -21,25 +21,26 @@ conda activate pca
 ```
 ## Code
 0. Convert_file_gps
-This file performs the mapping between GPS and a trajectory. It returns an HTML file that displays the trajectory in a route.
+This file performs the mapping between GPS and a trajectory. It returns an HTML file that displays the trajectory in a map.
 
 1. PCA
-This file performs principal component analysis on a given dataset, allowing us to reduce the dimensionality of the dataset and thus representing a trajectory as a data point in a new feature space.
+First axis of my MIA: This file performs principal component analysis on a given dataset, allowing us to reduce the dimensionality of the dataset and thus representing a trajectory as a data point in a new feature space.
 
 2. PCA Comparative
-This file performs principal component analysis for two different datasets. For my attack, it will be gene.data against test.dat+val.data.
+This file performs principal component analysis for two different datasets. For my attack, it will be gene.data against test.dat+val.data, this is due to how the synthetic trajectories were generated, you can change this settings at the beginning of the notebook.
 
 3. PCA Bulk
 This file performs PCA Comparative for a range of epsilons, without having to manually run each.
 
 4. PCA KNN
-This file performs a K-Nearest-Neighbor after the PCA. Therefore, it will find similar trajectories between the datasets and return their distance. Moreover, the distance can be calculated according to Manhattan, Euclidean, Chebyshev algorithms.
+Second axis of my MIA: This file performs a K-Nearest-Neighbor after the PCA. Therefore, it will find similar trajectories between the datasets and return their distance. Moreover, you can choose between different distance_metrics, in my case none had an edge between them.
 
 RouteMIA
-   - MIN MAX:
-        Most likelyhood classifier.
-   - PCA KNN SVM:
+   6. MIN MAX:
+        Most likelyhood classifier based on probability and a threshold
+   7. SVM:
         Support Vector Machine that can use linear, polynomial or radial basis kernel classifier.
-   - PCA KNN Random Forest:
-        Unsupervised Random Forest classifier
+   8. Random Forest:
+        Random Forest classifier
         
+I recommend if you want to mess around with the code to take a look at my paper (to be published) or a brief article that showcases this work presented in RECSI 2024
