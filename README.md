@@ -44,4 +44,4 @@ Support Vector Machine that can use linear, polynomial or radial basis kernel cl
 10. Random Forest
 Random Forest classifier.
         
-I recommend if you want to mess around with the code to take a look at my paper (to be published, arxiv is taking long) or a brief article that showcases this work presented in RECSI 2024.
+I recommend if you want to mess around with the code to take a look at my [paper](https://upcommons.upc.edu/handle/2117/412722)
